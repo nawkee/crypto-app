@@ -1,0 +1,85 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.App {
+  background: #222233;
+  color: #FFF;
+  font-family: sans-serif;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  width: 100%;
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.input {
+  display: flex;
+  gap: 10px;
+}
+
+.input > input {
+  padding: 10px 20px;
+  border: none;
+  background: #FFF;
+  border-radius: 5px;
+  flex-grow: 100;
+}
+
+.input > input:focus-visible {
+  outline: none;
+}
+
+.input > button {
+  padding: 10px 20px;
+  border: none;
+  background: #28A745;
+  color: #FFF;
+  border-radius: 5px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.market-data {
+  display: flex;
+  align-items: center;
+  padding: 15px 20px;
+  justify-content: space-between;
+  background: #28A745;
+  color: #FFF;
+  border-radius: 5px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  line-height: 24px;
+  flex: 1;
+}
+
+.chart-container {
+  width: 100%;
+}
+
+.chart-wrapper {
+  background: #FFF;
+  border-radius: 5px;
+}
+
+canvas {
+  grid-area: chart;
+  border-radius: 0 0 30px 30px;
+  margin-top: auto;
+}
